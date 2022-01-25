@@ -15,10 +15,6 @@ knitr::opts_chunk$set(
 
 # TABLEONE
 
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/ningb/TABLEONE/workflows/R-CMD-check/badge.svg)](https://github.com/ningb/TABLEONE/actions)
-<!-- badges: end -->
-
 The goal of TABLEONE is to generate table 1 on study sample.
 
 Major highlights include:
