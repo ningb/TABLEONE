@@ -1,0 +1,18 @@
+Package: TABLEONE
+Title: Generate table one statistics for multiple groups
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Boting",
+           family = "Ning",
+           role = c("aut", "cre"),
+           email = "boting.m.ning@gmal.com",
+           comment = "")
+Description: Generate table one statistics for multiple groups. Output the table in either figure or excel format.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
