@@ -204,9 +204,3 @@ tableone.export <- function(table.obj, filename="Table1") {
 
 	write.xlsx(table.obj, outputname, row.names = FALSE, append = TRUE)
 }
-
-
-
-# library(formattable)
-# library("htmltools")
-# library("webshot")  

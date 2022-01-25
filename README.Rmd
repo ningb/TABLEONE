@@ -1,0 +1,58 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# TABLEONE
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of TABLEONE is to generate table 1 on study sample.
+
+Major highlights include:
+
+- Main variable could be variable format: continuous, binary or categorical (>2 levels).
+- Perform statistical test depending on variable class: correlation/two-group t-test/ANOVA
+- Output resulted table in both pdf and excel format.
+
+## Installation
+
+`TABLEONE` can be installed from [GitHub](https://github.com/ningb/TABLEONE) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("ningb/TABLEONE")
+```
+## Usage
+
+### Generating table one with statistics
+
+Here is a basic example. The `TABLEONE` pakcage includes a toy example study description. We will load it and examine the varaibles association with the cancer status:
+
+```{r example}
+library(TABLEONE)
+data(index)
+output <- tableone("Cancer", c(1:5), index)
+
+output
+```
+
+### Output 
+
+`TABLEONE` includes two types of output: pdf or excel (good for presentation and sharing):
+
+```{r}
+tableone.plot(output)
+# tableone.export(output)
+```
