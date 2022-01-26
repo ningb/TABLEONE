@@ -8,11 +8,14 @@ Authors@R:
            email = "boting.m.ning@gmal.com",
            comment = "")
 Description: Generate table one statistics for multiple groups. Output the table in either figure or excel format.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
+Imports:
+    grid,
+    gridExtra,
+    xlsx
